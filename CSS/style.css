@@ -1,0 +1,709 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+.container {
+  width: 1380px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 10px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20.8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .logo {
+  height: 100%;
+}
+.header .search {
+  display: flex;
+  align-items: center;
+}
+.header .search .katalog {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.header .search .katalog img {
+  width: 154px;
+  height: 49px;
+}
+.header .search .searchbar {
+  position: relative;
+}
+.header .search .searchbar input {
+  height: 49px;
+  width: 483px;
+  border-radius: 5px;
+  position: relative;
+  outline: none;
+  padding-left: 4%;
+}
+.header .search .searchbar label {
+  font-size: 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  left: 10%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header .search .searchbar label img {
+  width: 12px;
+  margin-right: 3px;
+}
+.header .header_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .header_list .burger_menu {
+  left: 100%;
+  transition-duration: 1s;
+  background: #999;
+  overflow: hidden;
+}
+.header .header_list .burger_menu li {
+  height: 50px;
+  width: 100vw;
+  display: none !important;
+}
+.header .header_list .burger_menu li:hover {
+  background: #fff;
+  color: #000;
+}
+.header .header_list .burger_menu .contact {
+  display: none !important;
+}
+.header .header_list li {
+  cursor: pointer;
+  margin: 0 10px;
+}
+.header .header_list li:hover {
+  color: #FC42FF;
+}
+.header .header_list li:last-child:hover {
+  color: #000;
+}
+.header .header_list li input:checked ~ label .fa-bars {
+  display: none;
+}
+.header .header_list li input:checked ~ label .fa-x {
+  display: block;
+}
+.header .header_list img {
+  height: 35px;
+}
+
+.header_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.header_nav ul {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+}
+.header_nav ul li {
+  cursor: pointer;
+  margin-right: 40px;
+}
+.header_nav ul li:hover {
+  color: #FC42FF;
+}
+.header_nav .contact {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 600;
+}
+.header_nav .contact span {
+  margin: 0 15px 0 5px;
+}
+.header_nav .contact img {
+  width: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.header_nav .contact .time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+.header_nav .contact .time span {
+  margin: 0;
+  font-weight: 500;
+}
+.header_nav .contact .time p {
+  font-weight: 700;
+}
+
+#first {
+  margin: 25px 0;
+}
+#first h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#first .link {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+#first .link span {
+  margin: 0 7px;
+}
+#first .link p:hover {
+  cursor: pointer;
+  color: #666;
+}
+#first .boxes {
+  display: flex;
+  flex-wrap: wrap;
+}
+#first .boxes img {
+  width: 100%;
+}
+#first .boxes .box {
+  cursor: pointer;
+  padding: 0 15px;
+  border-radius: 5px;
+  height: 400px;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+#second {
+  margin: 25px 0;
+}
+#second h2 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+#second .info {
+  display: flex;
+}
+#second .info .contact p {
+  font-weight: 600;
+  font-size: 70px;
+  margin: 40px 0;
+}
+#second .info .contact .set {
+  display: flex;
+}
+#second .info .contact .set .links {
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  margin-right: 25px;
+}
+#second .info .contact .set .links img {
+  margin-bottom: 5px;
+  width: 50px;
+}
+#second .info .adres {
+  margin-left: 150px;
+}
+#second .info .adres h3 {
+  font-weight: 600;
+  font-size: 40px;
+  margin: 30px 0;
+}
+#second .info .adres .time {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#second .info .adres .time span {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+#second .info .adres .time p {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.d-none,
+.fa-bars {
+  display: none;
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1200px) {
+  .container {
+    width: 1140px !important;
+    margin: 0 auto;
+  }
+  .header {
+    height: 35px !important;
+    margin-top: 30px;
+  }
+  .header .search {
+    height: 30px !important;
+  }
+  .header .katalog img {
+    width: 100px !important;
+    height: 35px !important;
+  }
+  .header input {
+    height: 35px !important;
+    width: 275px !important;
+  }
+  .header label {
+    left: 15% !important;
+  }
+  .header ul {
+    font-size: 14px;
+  }
+  .header ul img {
+    width: 30px;
+  }
+  .header_nav ul {
+    font-size: 12px !important;
+  }
+  .header_nav .contact {
+    font-size: 13px;
+  }
+  .header_nav .contact img {
+    width: 25px;
+  }
+  #first h2 {
+    font-size: 35px;
+  }
+  #first .link {
+    font-size: 12px;
+  }
+  #second h2 {
+    font-size: 35px;
+  }
+  #second .contact p {
+    font-size: 45px !important;
+  }
+  #second .contact img {
+    width: 30px !important;
+  }
+  #second .contact span {
+    font-size: 13px !important;
+  }
+  #second .adres h3 {
+    font-size: 33px !important;
+    font-weight: 600 !important;
+    margin: 25px 0 !important;
+  }
+  #second .adres .time span {
+    font-size: 15px !important;
+  }
+  #second .adres .time p {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+}
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .container {
+    width: 756px;
+  }
+  .header {
+    height: 23px !important;
+    margin-top: 30px;
+  }
+  .header .logo img {
+    height: 29px;
+  }
+  .header .katalog img {
+    width: 75px !important;
+    height: 23px !important;
+  }
+  .header input {
+    height: 23px !important;
+    width: 200px !important;
+  }
+  .header label {
+    left: 16% !important;
+  }
+  .header ul li {
+    display: none;
+  }
+  .header ul li:last-child {
+    display: block;
+  }
+  .header ul .burger_menu {
+    transition: 1s !important;
+  }
+  .header ul input:checked ~ .burger_menu {
+    overflow: hidden;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 93%;
+    bottom: 0;
+    background: #333;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header ul input:checked ~ .burger_menu li {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .header ul input:checked ~ .burger_menu .contact {
+    margin-bottom: 50px;
+    width: 100vw;
+    color: #fff;
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header ul input:checked ~ .burger_menu .contact i {
+    font-size: 20px;
+  }
+  .header ul input:checked ~ .burger_menu .contact .div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header ul img {
+    width: 25px;
+  }
+  .header_nav {
+    display: none;
+  }
+  #first h2 {
+    margin-top: 45px;
+    font-size: 30px;
+  }
+  #first .link {
+    font-size: 10px;
+  }
+  #first .boxes {
+    justify-content: center;
+  }
+  #first .box {
+    height: 300px !important;
+    width: 33% !important;
+  }
+  #second h2 {
+    font-size: 30px;
+  }
+  #second .contact p {
+    font-size: 38px !important;
+  }
+  #second .contact img {
+    width: 25px !important;
+  }
+  #second .contact span {
+    font-size: 11px !important;
+  }
+  #second .adres h3 {
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    margin: 20px 0 30px !important;
+  }
+  #second .adres .time span {
+    font-size: 15px !important;
+  }
+  #second .adres .time p {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+  .fa-bars {
+    display: block;
+  }
+}
+@media screen and (max-width: 800px) and (min-width: 400px) {
+  .container {
+    width: 97%;
+  }
+  .header {
+    height: 23px !important;
+    margin-top: 30px;
+  }
+  .header .logo img {
+    height: 29px;
+  }
+  .header .katalog img {
+    width: 75px !important;
+    height: 23px !important;
+  }
+  .header input {
+    height: 23px !important;
+    width: 200px !important;
+  }
+  .header label {
+    left: 16% !important;
+  }
+  .header ul li {
+    display: none;
+  }
+  .header ul li:last-child {
+    display: block;
+  }
+  .header ul .burger_menu {
+    transition: 1s !important;
+  }
+  .header ul input:checked ~ .burger_menu {
+    overflow: hidden;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 93%;
+    bottom: 0;
+    background: #333;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header ul input:checked ~ .burger_menu li {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .header ul input:checked ~ .burger_menu .contact {
+    margin-bottom: 50px;
+    width: 100vw;
+    color: #fff;
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header ul input:checked ~ .burger_menu .contact i {
+    font-size: 20px;
+  }
+  .header ul input:checked ~ .burger_menu .contact .div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header ul img {
+    width: 25px;
+  }
+  .header_nav {
+    display: none;
+  }
+  #first h2 {
+    margin-top: 45px;
+    font-size: 30px;
+  }
+  #first .link {
+    font-size: 10px;
+  }
+  #first .boxes {
+    justify-content: center !important;
+  }
+  #first .box {
+    height: auto !important;
+    width: 50% !important;
+    margin: 50px 0;
+  }
+  #first .box img {
+    width: 100%;
+    height: 100%;
+  }
+  #second h2 {
+    font-size: 30px;
+  }
+  #second .info {
+    display: flex;
+    flex-direction: column;
+  }
+  #second .contact p {
+    font-size: 28px !important;
+    font-weight: 800;
+  }
+  #second .contact img {
+    width: 25px !important;
+  }
+  #second .contact span {
+    font-size: 11px !important;
+  }
+  #second .adres {
+    margin-left: 0 !important;
+    margin-top: 50px;
+  }
+  #second .adres h3 {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    margin: 20px 0 30px !important;
+  }
+  #second .adres .time span {
+    font-size: 15px !important;
+  }
+  #second .adres .time p {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+  .fa-bars {
+    display: block;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    width: 97%;
+  }
+  .header {
+    height: 23px !important;
+    margin-top: 30px;
+  }
+  .header .logo img {
+    height: 29px;
+  }
+  .header .katalog img {
+    width: 75px !important;
+    height: 23px !important;
+  }
+  .header input {
+    height: 23px !important;
+    width: 200px !important;
+  }
+  .header label {
+    left: 16% !important;
+  }
+  .header ul li {
+    display: none;
+  }
+  .header ul li:last-child {
+    display: block;
+  }
+  .header ul .burger_menu {
+    transition: 1s !important;
+  }
+  .header ul input:checked ~ .burger_menu {
+    overflow: hidden;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 93%;
+    bottom: 0;
+    background: #333;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .header ul input:checked ~ .burger_menu li {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 30px 0;
+    text-align: center;
+  }
+  .header ul input:checked ~ .burger_menu .contact {
+    margin-bottom: 50px;
+    width: 100vw;
+    color: #fff;
+    display: flex !important;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .header ul input:checked ~ .burger_menu .contact i {
+    font-size: 20px;
+  }
+  .header ul input:checked ~ .burger_menu .contact .div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header ul img {
+    width: 25px;
+  }
+  .header_nav {
+    display: none;
+  }
+  #first h2 {
+    margin-top: 45px;
+    font-size: 30px;
+  }
+  #first .link {
+    font-size: 10px;
+  }
+  #first .boxes {
+    justify-content: center !important;
+  }
+  #first .box {
+    height: auto !important;
+    width: 100% !important;
+    margin: 50px 0;
+  }
+  #first .box img {
+    width: 100%;
+    height: 100%;
+  }
+  #second .info {
+    display: flex;
+    flex-direction: column;
+  }
+  #second h2 {
+    font-size: 30px;
+  }
+  #second .contact p {
+    font-size: 28px !important;
+    font-weight: 800;
+  }
+  #second .contact img {
+    width: 25px !important;
+  }
+  #second .contact span {
+    font-size: 11px !important;
+  }
+  #second .adres {
+    margin-top: 40px;
+    margin-left: 0 !important;
+  }
+  #second .adres h3 {
+    font-size: 28px !important;
+    font-weight: 600 !important;
+    margin: 20px 0 30px !important;
+  }
+  #second .adres .time span {
+    font-size: 15px !important;
+  }
+  #second .adres .time p {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+  }
+  .fa-bars {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */
