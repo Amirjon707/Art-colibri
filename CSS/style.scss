@@ -116,15 +116,14 @@ body {
             }
 
             input {
-                &:checked~label .fa-bars {
-                    display: none;
-                }
 
-                &:checked~label .fa-x {
+                &:checked~.burger_menu .fa-x,
+                &:checked~.burger_menu .logo {
                     display: block;
                 }
 
             }
+
         }
 
         img {
@@ -218,9 +217,12 @@ body {
 
         img {
             width: 100%;
+            border-radius: 10px;
+            background: #9e9e9e8a;
         }
 
         .box {
+            transition: .3s;
             cursor: pointer;
             padding: 0 15px;
             border-radius: 5px;
@@ -232,6 +234,14 @@ body {
             justify-content: center;
             font-weight: 600;
             font-size: 18px;
+
+            &:hover {
+                img {
+                    box-shadow: 0 0 15px 1px black;
+                }
+
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -460,13 +470,34 @@ body {
 
             }
 
+            .burger_head {
+                margin-top: 30px;
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+                color: #fff;
+                font-size: 24px;
+                font-style: normal;
+
+                img {
+                    height: 50px !important;
+                    width: 75px;
+                }
+            }
+
             input {
+                &:checked~.burger_menu .d-none {
+                    display: flex;
+                    flex-direction: column;
+                }
+
                 &:checked~.burger_menu {
                     overflow: hidden;
                     left: 0;
                     position: fixed;
                     width: 100%;
-                    height: 93%;
+                    height: 100vh !important;
                     bottom: 0;
                     background: #333;
                     z-index: 3;
@@ -491,9 +522,11 @@ body {
                         display: flex !important;
                         justify-content: space-evenly;
                         align-items: center;
-                        i{
+
+                        i {
                             font-size: 20px;
                         }
+
                         .div {
                             display: flex;
                             flex-direction: column;
@@ -514,7 +547,7 @@ body {
         display: none;
     }
 
-    
+
     #first {
         h2 {
             margin-top: 45px;
@@ -524,16 +557,18 @@ body {
         .link {
             font-size: 10px;
         }
+
         .boxes {
             justify-content: center;
         }
+
         .box {
             height: 300px !important;
             width: 33% !important;
         }
     }
 
-    
+
     #second {
         h2 {
             font-size: 30px;
@@ -625,13 +660,34 @@ body {
 
             }
 
+            .burger_head {
+                margin-top: 30px;
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+                color: #fff;
+                font-size: 24px;
+                font-style: normal;
+
+                img {
+                    height: 50px !important;
+                    width: 75px;
+                }
+            }
+
             input {
+                &:checked~.burger_menu .d-none {
+                    display: flex;
+                    flex-direction: column;
+                }
+
                 &:checked~.burger_menu {
                     overflow: hidden;
                     left: 0;
                     position: fixed;
                     width: 100%;
-                    height: 93%;
+                    height: 100%;
                     bottom: 0;
                     background: #333;
                     z-index: 3;
@@ -656,9 +712,11 @@ body {
                         display: flex !important;
                         justify-content: space-evenly;
                         align-items: center;
-                        i{
+
+                        i {
                             font-size: 20px;
                         }
+
                         .div {
                             display: flex;
                             flex-direction: column;
@@ -688,13 +746,16 @@ body {
         .link {
             font-size: 10px;
         }
+
         .boxes {
             justify-content: center !important;
         }
+
         .box {
             height: auto !important;
             width: 50% !important;
             margin: 50px 0;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -730,6 +791,7 @@ body {
         .adres {
             margin-left: 0 !important;
             margin-top: 50px;
+
             h3 {
                 font-size: 28px !important;
                 font-weight: 600 !important;
@@ -801,13 +863,34 @@ body {
 
             }
 
+            .burger_head {
+                margin-top: 30px;
+                display: flex;
+                width: 100%;
+                justify-content: space-around;
+                align-items: center;
+                color: #fff;
+                font-size: 24px;
+                font-style: normal;
+
+                img {
+                    height: 50px !important;
+                    width: 75px;
+                }
+            }
+
             input {
+                &:checked~.burger_menu .d-none {
+                    display: flex;
+                    flex-direction: column;
+                }
+
                 &:checked~.burger_menu {
                     overflow: hidden;
                     left: 0;
                     position: fixed;
                     width: 100%;
-                    height: 93%;
+                    height: 100%;
                     bottom: 0;
                     background: #333;
                     z-index: 3;
@@ -832,9 +915,11 @@ body {
                         display: flex !important;
                         justify-content: space-evenly;
                         align-items: center;
-                        i{
+
+                        i {
                             font-size: 20px;
                         }
+
                         .div {
                             display: flex;
                             flex-direction: column;
@@ -864,13 +949,16 @@ body {
         .link {
             font-size: 10px;
         }
+
         .boxes {
             justify-content: center !important;
         }
+
         .box {
             height: auto !important;
             width: 100% !important;
             margin: 50px 0;
+
             img {
                 width: 100%;
                 height: 100%;
@@ -883,6 +971,7 @@ body {
             display: flex;
             flex-direction: column;
         }
+
         h2 {
             font-size: 30px;
         }
@@ -905,6 +994,7 @@ body {
         .adres {
             margin-top: 40px;
             margin-left: 0 !important;
+
             h3 {
                 font-size: 28px !important;
                 font-weight: 600 !important;
