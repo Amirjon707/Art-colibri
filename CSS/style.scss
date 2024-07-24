@@ -615,7 +615,7 @@ body {
 
 @media screen and (max-width: 800px) and (min-width: 400px) {
     .container {
-        width: 97%;
+        width: 95%;
     }
 
     .header {
@@ -818,7 +818,9 @@ body {
 
 @media screen and (max-width: 400px) {
     .container {
-        width: 97%;
+        width: 95%;
+        display: flex;
+        justify-content: center;
     }
 
     .header {
