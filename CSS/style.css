@@ -51,6 +51,10 @@ body {
   position: relative;
   outline: none;
   padding-left: 4%;
+  transition: 1s;
+}
+.header .search .searchbar input:valid ~ label {
+  display: none;
 }
 .header .search .searchbar label {
   font-size: 10px;
@@ -78,6 +82,7 @@ body {
   overflow: hidden;
 }
 .header .header_list .burger_menu li {
+  transition: 0.3s;
   height: 50px;
   width: 100vw;
   display: none !important;
@@ -191,15 +196,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   font-weight: 600;
   font-size: 18px;
 }
 #first .boxes .box:hover {
-  transform: scale(1.1);
+  box-shadow: 5px 5px 5px 0.5px rgba(0, 0, 0, 0.39);
+  transform: scale(1.05);
 }
-#first .boxes .box:hover img {
-  box-shadow: 0 0 15px 1px black;
+#first .boxes .box p {
+  height: 66px;
 }
 
 #second {
@@ -469,7 +475,7 @@ body {
 }
 @media screen and (max-width: 800px) and (min-width: 400px) {
   .container {
-    width: 97%;
+    width: 95%;
   }
   .header {
     height: 23px !important;
@@ -619,7 +625,7 @@ body {
 }
 @media screen and (max-width: 400px) {
   .container {
-    width: 97%;
+    width: 95%;
   }
   .header {
     height: 23px !important;
@@ -729,6 +735,9 @@ body {
   #first .box img {
     width: 100%;
     height: 100%;
+  }
+  #first .box p {
+    height: auto !important;
   }
   #second .info {
     display: flex;
